@@ -1,0 +1,108 @@
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 48px;
+  text-align: left;
+
+  @media (max-width: 1024px) {
+    padding: 28px 20px;
+  }
+}
+
+.hero {
+  display: grid;
+  gap: 12px;
+  max-width: 760px;
+}
+
+.hero p {
+  max-width: 720px;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.table-card,
+.summary-card {
+  background: var(--social-bg);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.table-card {
+  overflow-x: auto;
+}
+
+.data-table {
+  border-collapse: collapse;
+  min-width: 860px;
+  width: 100%;
+}
+
+.data-table caption {
+  color: var(--text-h);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 24px;
+  text-align: left;
+}
+
+.data-table th,
+.data-table td {
+  border-top: 1px solid var(--border);
+  padding: 14px 16px;
+  vertical-align: middle;
+}
+
+.data-table th {
+  color: var(--text-h);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.data-table input {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-h);
+  background: var(--bg);
+  font: inherit;
+  padding: 8px 10px;
+}
+
+button {
+  border: 1px solid var(--accent-border);
+  border-radius: 999px;
+  color: var(--text-h);
+  background: var(--accent-bg);
+  cursor: pointer;
+  font: inherit;
+  padding: 8px 14px;
+}
+
+button:hover {
+  border-color: var(--accent);
+}
+
+.secondary {
+  background: transparent;
+}
+
+.row-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.summary-card {
+  padding: 24px;
+}
